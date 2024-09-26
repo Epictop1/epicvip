@@ -7,6 +7,49 @@
     scroll-behavior: smooth;
 }
 
+
+/* ======================================
+/* From Uiverse.io by Voxybuns */
+
+button {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+    position: absolute;
+    left: 14cm;
+    top: 13cm;
+    z-index: 1;
+}
+
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+}
+
 header {
     background-color: transparent;
     width: 100%;
@@ -126,36 +169,12 @@ section {
     margin-bottom: 30px;
 }
 
-.main-btn {
-    color: #fff;
-    background-color: #3a6cf4;
-    text-decoration: none;
-    font-size: 1.3em;
-    font-weight: 500;
-    display: inline-block;
-    padding: 0.9375em 2.1875em;
-    letter-spacing: 1px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    transition: 0.7s ease;
-    position: absolute;
-    top: 61%;
-    left: 41.6%;
-}
-
 .project-image {
     position: absolute;
-    top: 40%;
-    /* center vertically */
-    left: 51%;
-    /* center horizontally */
-    transform: translate(-50%, -50%);
-    /* adjust for image size */
-    width: 20%;
-    /* adjust the width to your liking */
-    height: auto;
-    /* maintain the aspect ratio */
-    object-fit: cover;
+    left: 14.3cm;
+    top: 10cm;
+    width: 200px;
+    height: 200px;
 }
 
 .logo2 {
@@ -164,11 +183,6 @@ section {
     position: absolute;
     right: 100px;
     margin-top: 50px;
-}
-
-.main-btn:hover {
-    background-color: #0a49f6;
-    transform: scale(1.1);
 }
 
 .social-icons a {
