@@ -101,6 +101,7 @@ section {
     background-size: cover;
     background-position: center;
     background-attachment: local;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main h2 {
@@ -164,6 +165,7 @@ section {
     position: absolute;
     right: 100px;
     margin-top: 50px;
+    font-size: large;
 }
 
 .main-btn:hover {
