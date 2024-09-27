@@ -63,6 +63,8 @@ header {
 
 .logo {
     text-decoration: none;
+    margin-top: 1px;
+    margin-left: 4px;
     color: #3a6cf4;
     text-transform: uppercase;
     font-weight: 700;
@@ -108,6 +110,7 @@ header {
 
 .navigation a:hover {
     color: #ff0000;
+    text-decoration: underline;
 }
 
 section {
@@ -183,6 +186,8 @@ section {
     position: absolute;
     right: 100px;
     margin-top: 50px;
+    font-size: large;
+    text-decoration: none;
 }
 
 .social-icons a {
@@ -321,6 +326,10 @@ section {
 .footer-title {
     font-size: 1.3em;
     font-weight: 600;
+}
+
+.footer-title a {
+    text-decoration: none;
 }
 
 .footer-title span {
