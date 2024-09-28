@@ -366,6 +366,24 @@ section {
     }
 }
 
+@media (max-width:641px) {
+    body {
+        font-size: 12px;
+    }
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+    .main-content h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px) {
+    body {
+        font-size: 10px;
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
