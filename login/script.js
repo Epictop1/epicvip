@@ -9,7 +9,7 @@ form.addEventListener('submit', function(e) {
 
     // تحقق من اسم المستخدم وكلمة المرور
     if (username === 'admin' && password === '1234') {
-        window.location.href = 'dev-mode.html'; // الانتقال إلى وضع التطوير
+        window.location.href = '#'; // الانتقال إلى وضع التطوير
     } else {
         errorMessage.textContent = 'اسم المستخدم أو كلمة المرور غير صحيحة.'; // عرض رسالة الخطأ
     }
