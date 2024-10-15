@@ -37,6 +37,10 @@ header {
     margin-bottom: 111cm;
     margin-left: auto;
     /* دفع الشعار إلى أقصى اليمين */
+    user-select: none;
+    /* منع تحديد الشعار */
+    pointer-events: none;
+    /* منع التفاعل مع الشعار */
 }
 
 .navigation a {
