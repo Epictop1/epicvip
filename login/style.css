@@ -8,17 +8,13 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background: url(/images/pubg.jpeg) no-repeat;
+    background-color: #212121;
+    /* هذا هو اللون الأسود */
+    /* قم بإزالة الخلفية التالية إذا كانت موجودة */
+    /* background: url(/images/pubg.jpeg) no-repeat; */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
-
-.login-container {
-    background: #171717;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -185,14 +181,6 @@ header {
 .button2:hover {
     background-color: black;
     color: white;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
 }
 
 .button3 {
