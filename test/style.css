@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    /* منع التمرير الأفقي */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* توسيط العناصر */
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation {
+    margin-top: 10px;
+}
+
+.navigation a {
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 0 15px;
+}
+
+.navigation a:hover {
+    color: #ff0000;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    /* توسيط النص */
+    padding-top: 80px;
+    /* توفير مساحة تحت الهيدر */
+}
+
+section {
+    color: #fff;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #3a6cf4;
+    padding: 0.5em 1.5em;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+}
+
+.top-right-logo {
+    max-width: 70px;
+    position: relative;
+    margin-left: 10cm;
+    margin-top: -2cm;
+}
+
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+
+/* تصميم متجاوب */
+
+@media (max-width: 1024px) {
+    header {
+        padding: 12px 20px;
+    }
+    .main h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        font-size: 12px;
+    }
+    .main h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 10px;
+    }
+}

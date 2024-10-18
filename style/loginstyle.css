@@ -17,43 +17,30 @@ body {
     background-attachment: fixed;
 }
 
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
-    background-color: #171717;
     width: 100%;
     position: fixed;
     z-index: 999;
+    top: 0;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px;
-    top: 0cm;
-}
-
-.top-right-logo {
-    max-width: 70px;
-    max-height: 70px;
-    position: absolute;
-    margin-right: 3cm;
-    margin-bottom: 111cm;
-    margin-left: auto;
-    /* دفع الشعار إلى أقصى اليمين */
-    user-select: none;
-    /* منع تحديد الشعار */
-    pointer-events: none;
-    /* منع التفاعل مع الشعار */
-}
-
-.navigation a {
-    color: #3a6cf4;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 500;
-    padding-left: 30px;
-    margin-right: 1cm;
-}
-
-.navigation a:hover {
-    color: #ff0000;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .logo {
@@ -64,14 +51,40 @@ header {
     font-size: 1.8em;
 }
 
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a {
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    color: #ff0000;
+}
+
 .top-right-logo {
-    max-width: 70px;
-    max-height: 70px;
-    position: absolute;
-    right: 5px;
-    margin-top: -25px;
-    margin-left: auto;
-    /* دفع الشعار إلى أقصى اليمين */
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .top-right-logo {
+        margin-top: 10px;
+    }
 }
 
 
@@ -114,6 +127,7 @@ header {
     margin: 2em;
     color: rgb(255, 255, 255);
     font-size: 1.2em;
+    user-select: none;
 }
 
 .field {
@@ -142,6 +156,7 @@ header {
     outline: none;
     width: 100%;
     color: #d3d3d3;
+    user-select: none;
 }
 
 .form .btn {

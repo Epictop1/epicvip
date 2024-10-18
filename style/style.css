@@ -4,28 +4,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-.top-right-logo {
-    max-width: 70px;
-    max-height: 70px;
-    position: absolute;
-    right: 5px;
-    margin-top: -35px;
-    margin-left: auto;
-    /* دفع الشعار إلى أقصى اليمين */
 }
 
 header {
-    background-color: #171717;
     width: 100%;
     position: fixed;
     z-index: 999;
+    top: 0;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .logo {
@@ -36,14 +33,40 @@ header {
     font-size: 1.8em;
 }
 
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a {
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    color: #ff0000;
+}
+
 .top-right-logo {
-    max-width: 70px;
-    max-height: 70px;
-    position: absolute;
-    right: 5px;
-    margin-top: -20px;
-    margin-left: auto;
-    /* دفع الشعار إلى أقصى اليمين */
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .top-right-logo {
+        margin-top: 10px;
+    }
 }
 
 .project-image {
@@ -52,18 +75,6 @@ header {
     height: 200px;
     margin-top: -5cm;
     margin-right: 29px;
-}
-
-.navigation a {
-    color: #3a6cf4;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 500;
-    padding-left: 30px;
-}
-
-.navigation a:hover {
-    color: #ff0000;
 }
 
 section {
@@ -80,10 +91,10 @@ section {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background: url(images/pubg.jpeg) no-repeat;
+    background: url(/images/pubg.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: local;
 }
 
 .main h2 {
@@ -152,8 +163,8 @@ section {
 
 .card {
     background-color: #fff;
-    width: 21.25em;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    width: 15.25em;
+    box-shadow: 0 10px 45px rgba(1 1 1 / 15%);
     border-radius: 10px;
     padding: 25px;
     margin: 15px;
@@ -199,11 +210,14 @@ section {
     padding: 2em;
     display: flex;
     justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-title {
     font-size: 1.3em;
     font-weight: 600;
+    margin-right: 20cm;
 }
 
 .footer-title span {
