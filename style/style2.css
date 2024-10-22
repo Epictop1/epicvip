@@ -441,7 +441,9 @@ button:hover #clip {
 .wins {
     position: relative;
     margin-top: 2cm;
-    display: inline-block;
+    margin-left: 10px;
+    display: block;
+    left: 1.7cm;
 }
 
 .card1,
