@@ -438,159 +438,18 @@ button:hover #clip {
 
 /* --------------------card-------------------------*/
 
-.wins {
-    position: relative;
-    margin-top: 2cm;
-    margin-left: 10px;
-    display: block;
-    left: 1.7cm;
+.image-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2.5cm;
+    padding: auto;
+    
 }
 
-.card1,
-.card2,
-.card3,
-.card4,
-.card5,
-.card6,
-.card7,
-.card8,
-.card9,
-.card10,
-.card11 {
-    display: inline-table;
-    margin: 21px;
-    /* add some margin between cards */
-    width: 450px;
-    height: 264px;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    background-attachment: local;
-    box-shadow: 10px 10px 20px #000000, -10px -10px 20px #000000;
-    transition: 0.4s ease;
-    margin-top: 70px;
-    /* adjust the value to your liking */
-}
-
-.card1 {
-    background: url(/images/wins/1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: local;
-}
-
-.card2 {
-    background: url(/images/wins/2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: local;
-}
-
-.card3 {
-    background: url(/images/wins/3.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: local;
-}
-
-.card4 {
-    background: url(/images/wins/4.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: local;
-}
-
-.card5 {
-    background: url(/images/wins/5.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: local;
-}
-
-.card6 {
-    background: url(/images/wins/6.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: local;
-}
-
-.card7 {
-    background: url(/images/wins/7.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: local;
-}
-
-.card8 {
-    background: url(/images/wins/8.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: local;
-}
-
-.card9 {
-    background: url(/images/wins/9.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: local;
-}
-
-.card10 {
-    background: url(/images/wins/10.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: local;
-}
-
-.card11 {
-    background: url(/images/wins/11.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: local;
-}
-
-.card1:hover {
-    transform: scale(1.1);
-}
-
-.card2:hover {
-    transform: scale(1.1);
-}
-
-.card3:hover {
-    transform: scale(1.1);
-}
-
-.card4:hover {
-    transform: scale(1.1);
-}
-
-.card5:hover {
-    transform: scale(1.1);
-}
-
-.card6:hover {
-    transform: scale(1.1);
-}
-
-.card7:hover {
-    transform: scale(1.1);
-}
-
-.card8:hover {
-    transform: scale(1.1);
-}
-
-.card9:hover {
-    transform: scale(1.1);
-}
-
-.card10:hover {
-    transform: scale(1.1);
-}
-
-.card11:hover {
-    transform: scale(1.1);
+.image-container img {
+    width: 30%;
+    margin-bottom: 10px;
 }
 
 

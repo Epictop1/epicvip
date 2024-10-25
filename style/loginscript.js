@@ -1,17 +1,30 @@
-const _0x3f5fdf = _0x57fb;
+const form = document.getElementById('form');
+const errorMessage = document.getElementById('error-message');
+const successmessage = document.getElementById('success-message');
 
-function _0x57fb(_0x1ada01, _0x44c17c) { const _0x2c528f = _0x2c52(); return _0x57fb = function(_0x57fbc3, _0x3bbac8) { _0x57fbc3 = _0x57fbc3 - 0x1e1; let _0x4f70b5 = _0x2c528f[_0x57fbc3]; return _0x4f70b5; }, _0x57fb(_0x1ada01, _0x44c17c); }(function(_0x534a07, _0x178006) { const _0x57636d = _0x57fb,
-        _0x186673 = _0x534a07(); while (!![]) { try { const _0x537983 = parseInt(_0x57636d(0x1ea)) / 0x1 + parseInt(_0x57636d(0x1ee)) / 0x2 * (-parseInt(_0x57636d(0x1e1)) / 0x3) + -parseInt(_0x57636d(0x1ed)) / 0x4 * (parseInt(_0x57636d(0x1e5)) / 0x5) + -parseInt(_0x57636d(0x1fa)) / 0x6 + parseInt(_0x57636d(0x1e2)) / 0x7 * (-parseInt(_0x57636d(0x1f5)) / 0x8) + parseInt(_0x57636d(0x1e8)) / 0x9 + parseInt(_0x57636d(0x1eb)) / 0xa * (parseInt(_0x57636d(0x1f1)) / 0xb); if (_0x537983 === _0x178006) break;
-            else _0x186673['push'](_0x186673['shift']()); } catch (_0x2c905c) { _0x186673['push'](_0x186673['shift']()); } } }(_0x2c52, 0x6e14f));
-const form = document[_0x3f5fdf(0x1f3)]('form'),
-    errorMessage = document[_0x3f5fdf(0x1f3)](_0x3f5fdf(0x1f4)),
-    successMessage = document[_0x3f5fdf(0x1f3)](_0x3f5fdf(0x1f9));
+form.addEventListener('submit', function(e) {
+    e.preventDefault(); // منع إعادة تحميل الصفحة
 
-function _0x2c52() { const _0xa257c6 = ['href', 'value', '1364905CWeGXM', 'Incorrect\x20username\x20or\x20password.', 'password', '5669343KObATU', 'textContent', '117486wRcTcO', '330sElSnn', 'style', '4smMEQs', '14zfHRlL', 'submit', 'preventDefault', '409398zlCEmd', 'block', 'getElementById', 'error-message', '8CFPOhG', '1234', 'addEventListener', 'display', 'success-message', '4747734xrXuCV', 'username', '44463aYWeMY', '2496865uYVhqs'];
-    _0x2c52 = function() { return _0xa257c6; }; return _0x2c52(); }
-form[_0x3f5fdf(0x1f7)](_0x3f5fdf(0x1ef), function(_0x5070b6) { const _0x38381d = _0x3f5fdf;
-    _0x5070b6[_0x38381d(0x1f0)](); const _0x50f3d4 = document[_0x38381d(0x1f3)](_0x38381d(0x1fb))[_0x38381d(0x1e4)],
-        _0x2a4546 = document['getElementById'](_0x38381d(0x1e7))['value'];
-    _0x50f3d4 === 'admin' && _0x2a4546 === _0x38381d(0x1f6) ? (window['location'][_0x38381d(0x1e3)] = '#', successMessage[_0x38381d(0x1e9)] = 'Login\x20Successfully', successMessage[_0x38381d(0x1ec)][_0x38381d(0x1f8)] = _0x38381d(0x1f2), setTimeout(function() { const _0xe52565 = _0x38381d;
-        successMessage['style'][_0xe52565(0x1f8)] = 'none'; }, 0x7d0)) : (errorMessage[_0x38381d(0x1e9)] = _0x38381d(0x1e6), errorMessage[_0x38381d(0x1ec)][_0x38381d(0x1f8)] = _0x38381d(0x1f2), setTimeout(function() { const _0x3c46fc = _0x38381d;
-        errorMessage['style'][_0x3c46fc(0x1f8)] = 'none'; }, 0x7d0)); });
+    const username = document.getElementById('username').value; // استخدام المعرف الصحيح
+    const password = document.getElementById('password').value; // استخدام المعرف الصحيح
+
+    // تحقق من اسم المستخدم وكلمة المرور
+    if (username === 'admin' && password === '1234') {
+        window.location.href = '/dev.html'; // الانتقال إلى وضع التطوير
+        successmessage.textContent = 'Login Successfully'; // عرض رسالة النجاح
+        successmessage.style.display = 'block'; // تأكيد عرض الرسالة
+
+        // إخفاء الرسالة بعد 3 ثواني
+        setTimeout(function() {
+            successmessage.style.display = 'none';
+        }, 2000);
+    } else {
+        errorMessage.textContent = 'Incorrect username or password.'; // عرض رسالة الخطأ
+        errorMessage.style.display = 'block'; // تأكيد عرض الرسالة
+
+        // إخفاء الرسالة بعد 3 ثواني
+        setTimeout(function() {
+            errorMessage.style.display = 'none';
+        }, 2000);
+    }
+});
