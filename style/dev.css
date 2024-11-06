@@ -8,6 +8,17 @@
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
+.logout-link {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.logout-link:hover {
+    color: darkblue;
+    text-decoration: none;
+}
 
 body {
     display: flex;
