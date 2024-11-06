@@ -22,7 +22,13 @@ body {
     background: #000;
 }
 
-
+.protected-link, .logout-link {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 10px;
+}
 /* Section styles */
 
 section {
