@@ -83,7 +83,7 @@ section {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background: url(/images/pubg.jpeg) no-repeat;
+    background: url(/images/758546_847895.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -444,13 +444,19 @@ button:hover #clip {
     justify-content: space-between;
     margin-top: 2.5cm;
     padding: auto;
+    border-radius: 50px;
     
 }
 
 .image-container img {
     width: 30%;
-    margin-bottom: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    
 }
-
+.image-container img:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+}
 
 /* --------------------card-------------------------*/
