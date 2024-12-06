@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: radial-gradient(circle, #010101, #050505, #090909);
+    color: #fff ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.neon{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.neon-title{
+    font-size: 12rem;
+    color: #0ff;
+    text-shadow: 
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #00f,
+    0 0 80px #00f,
+    0 0 160px #00f;
+    animation: glow 2s infinite alternate;
+}
+.neon-subtitle{
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #f0f;
+    text-shadow: 
+    0 0 5px #f0f,
+    0 0 10px #f0f,
+    0 0 20px #f0f,
+    0 0 40px #800080;
+}
+.neon-description{
+font-size: 1.2rem;
+margin: 10px 0;
+color: #fff;
+text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+max-width: 500px;
+margin: 20px auto;
+line-height: 1.5;
+}
+.neon-button{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(45deg, #ff007f, #00ffff);
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 
+    0 0 10px #ff007f,
+    0 0 20px #ff007f,
+    0 0 40px #ff007f,
+    0 0 60px #00ffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.neon-button:hover{
+    transform: scale(1.1);
+    box-shadow: 
+    0 0 20px #ff007f,
+    0 0 40px #ff007f,
+    0 0 80px #00ffff,
+    0 0 160px #00ffff;
+}
+.footer{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #ccc;
+}
+.footer a {
+color: #0ff;
+text-decoration: none;
+text-shadow: 
+0 0 5px #0ff,
+0 0 10px #00f;
+}
+.footer a:hover {
+color: #f0f;
+}
+@keyframes glow {
+0% {
+    text-shadow: 
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #00f,
+    0 0 80px #00f,
+    0 0 160px #00f;
+}
+100% {
+text-shadow: 
+0 0 20px #f0f,
+0 0 40px #f0f,
+0 0 80px #800080,
+0 0 160px #800080;
+}
+}
